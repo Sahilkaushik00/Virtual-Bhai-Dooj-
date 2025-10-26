@@ -1,0 +1,7 @@
+{
+  "name": "Virtual Bhai Dooj Celebration",
+  "description": "An interactive web application to celebrate the festival of Bhai Dooj virtually. Users can activate their webcam, perform the 'tilak' ceremony by dragging a tilak onto the video feed, and generate personalized festive wishes using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

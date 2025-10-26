@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festive Virtual Bhai Dooj</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+    .festive-heading {
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(45deg, #8B0000, #FF1744, #FF6B9D, #FFD700);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textShimmer 3s ease-in-out infinite;
+    }
+    .festive-background {
+      background: linear-gradient(135deg, #FF6B9D, #C06C84, #F67280, #FFA07A, #FFD700, #FF8C42);
+      background-size: 400% 400%;
+      animation: festiveGradient 20s ease infinite;
+    }
+    .thali-glow {
+      animation: thaliGlow 3s ease-in-out infinite;
+    }
+    @keyframes festiveGradient {
+      0%, 100% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+    }
+    @keyframes textShimmer {
+      0%, 100% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+    }
+    @keyframes thaliGlow {
+      0%, 100% {box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);}
+      50% {box-shadow: 0 0 80px rgba(255, 140, 66, 0.9);}
+    }
+    .firework {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      animation: fireworkExplode 1.5s ease-out forwards;
+    }
+    @keyframes fireworkExplode {
+      0% {transform: scale(1); opacity: 1;}
+      100% {opacity: 0;}
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+<body class="festive-background">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
